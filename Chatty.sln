@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatty.ExplorationTests.RabbitMq", "Chatty.ExplorationTests.RabbitMq\Chatty.ExplorationTests.RabbitMq.csproj", "{67A30EC1-9C15-4849-850B-02425AEC2CA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatty.Domain", "Chatty.Domain\Chatty.Domain.csproj", "{C696DE6E-2951-4801-A01F-EE81BBD8BB19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatty.CQRSToolkit", "Chatty.CQRSToolkit\Chatty.CQRSToolkit.csproj", "{73034DB7-7242-4926-9892-D18B58487C8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatty.Contracts", "Chatty.Contracts\Chatty.Contracts.csproj", "{886B5958-1DCC-4431-A985-143D70DD1D67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatty.Service", "Chatty.Service\Chatty.Service.csproj", "{59F27CE4-22D9-4282-9F4E-162B8FA693A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67A30EC1-9C15-4849-850B-02425AEC2CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A30EC1-9C15-4849-850B-02425AEC2CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A30EC1-9C15-4849-850B-02425AEC2CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A30EC1-9C15-4849-850B-02425AEC2CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C696DE6E-2951-4801-A01F-EE81BBD8BB19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C696DE6E-2951-4801-A01F-EE81BBD8BB19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C696DE6E-2951-4801-A01F-EE81BBD8BB19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C696DE6E-2951-4801-A01F-EE81BBD8BB19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73034DB7-7242-4926-9892-D18B58487C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73034DB7-7242-4926-9892-D18B58487C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73034DB7-7242-4926-9892-D18B58487C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73034DB7-7242-4926-9892-D18B58487C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886B5958-1DCC-4431-A985-143D70DD1D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886B5958-1DCC-4431-A985-143D70DD1D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886B5958-1DCC-4431-A985-143D70DD1D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886B5958-1DCC-4431-A985-143D70DD1D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59F27CE4-22D9-4282-9F4E-162B8FA693A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F27CE4-22D9-4282-9F4E-162B8FA693A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F27CE4-22D9-4282-9F4E-162B8FA693A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F27CE4-22D9-4282-9F4E-162B8FA693A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

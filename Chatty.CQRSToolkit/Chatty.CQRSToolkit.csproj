@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73034DB7-7242-4926-9892-D18B58487C8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chatty.CQRSToolkit</RootNamespace>
+    <AssemblyName>Chatty.CQRSToolkit</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandHandlers\CommandHandler.cs" />
+    <Compile Include="CommandHandlers\ICommandHandler.cs" />
+    <Compile Include="CommandHandlers\LambdaCommandHandler.cs" />
+    <Compile Include="Emitters\ErrorEventEmitter.cs" />
+    <Compile Include="Emitters\EventEmitter.cs" />
+    <Compile Include="Emitters\IErrorEventEmitter.cs" />
+    <Compile Include="Emitters\IEventEmitter.cs" />
+    <Compile Include="Emitters\LambdaErrorEventEmitter.cs" />
+    <Compile Include="Emitters\LambdaEventEmitter.cs" />
+    <Compile Include="EventHandlers\EventHandler.cs" />
+    <Compile Include="EventHandlers\IEventHandler.cs" />
+    <Compile Include="EventHandlers\LambdaEventHandler.cs" />
+    <Compile Include="EventHandlers\NullEvent.cs" />
+    <Compile Include="Exceptions\BusNotFoundException.cs" />
+    <Compile Include="Exceptions\CommandHandlerException.cs" />
+    <Compile Include="Exceptions\EmitterException.cs" />
+    <Compile Include="Exceptions\EventHandlerException.cs" />
+    <Compile Include="Exceptions\EventHandlingException.cs" />
+    <Compile Include="Exceptions\EventValidationException.cs" />
+    <Compile Include="Exceptions\LoggerNotFoundException.cs" />
+    <Compile Include="Exceptions\QueryHandlerException.cs" />
+    <Compile Include="Exceptions\QueryValidationException.cs" />
+    <Compile Include="Exceptions\CommandValidationException.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\IEvent.cs" />
+    <Compile Include="Interfaces\IQuery.cs" />
+    <Compile Include="Interfaces\IQueryResponse.cs" />
+    <Compile Include="Logging\ConsoleLogger.cs" />
+    <Compile Include="Logging\DoubleLogger.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\LoggingLevel.cs" />
+    <Compile Include="Logging\LogManager.cs" />
+    <Compile Include="Messaging\BusManager.cs" />
+    <Compile Include="Messaging\DummyBus.cs" />
+    <Compile Include="Messaging\IBus.cs" />
+    <Compile Include="Messaging\IMessage.cs" />
+    <Compile Include="Messaging\IMessageResponse.cs" />
+    <Compile Include="Messaging\LoggingBusProxy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryHandlers\QueryHandler.cs" />
+    <Compile Include="QueryHandlers\IQueryHandler.cs" />
+    <Compile Include="QueryHandlers\LambdaQueryHandler.cs" />
+    <Compile Include="Validators\AlwaysFineCommandValidator.cs" />
+    <Compile Include="Validators\AlwaysWrongCommandValidator.cs" />
+    <Compile Include="Validators\LambdaCommandValidator.cs" />
+    <Compile Include="Validators\ICommandValidator.cs" />
+    <Compile Include="Validators\IEventValidator.cs" />
+    <Compile Include="Validators\IQueryValidator.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
